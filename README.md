@@ -23,7 +23,7 @@ SETTING
     os.environ['PATH'] = OSGEO4W + r"\bin;" + os.environ['PATH']
  3. buat migrasi DB dengan (python manage.py migrate)
  4. pakai migration dengan (python manage.py makemigrations)
- 5. Buat Akses Super user (python manage.py createsuperuser
+ 5. Buat Akses Super user (python manage.py createsuperuser)
     Masukan User, email, password
  6. Cek run project (python manage.py runserver)
     Default : http://127.0.0.1:8000/
