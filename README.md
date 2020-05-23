@@ -13,6 +13,7 @@ TOOLS YANG DIBUTUHKAN :
 SETTING 
 1. Pull Repository ini.
 2. setelah install OsGeo, Pastikan Settingan file settings.py dalam folder project sama dengan Path OsGeo yang kamu install di komputermu 
+   ```python
    OSGEO4W = r"C:\OSGeo4W"
     if '64' in platform.architecture()[0]:
         OSGEO4W += "64"
@@ -21,6 +22,7 @@ SETTING
     os.environ['GDAL_DATA'] = OSGEO4W + r"\share\gdal"
     os.environ['PROJ_LIB'] = OSGEO4W + r"\share\proj"
     os.environ['PATH'] = OSGEO4W + r"\bin;" + os.environ['PATH']
+    ```
  3. buat migrasi DB dengan (python manage.py migrate)
  4. pakai migration dengan (python manage.py makemigrations)
  5. Buat Akses Super user (python manage.py createsuperuser)
